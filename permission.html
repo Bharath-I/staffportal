@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Permission Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo-section">
+
+    <img src="logo.png" alt="Company Logo" class="logo-img">
+
+    <div class="logo-text">
+       OMSAKTHI OFFSET PRINTERS STAFF PORTAL
+    </div>
+
+</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#permission">Permission Form</a>
+            <a href="#history">History</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>1 Hour Permission Management</h1>
+
+            <p>
+                Staff can request in online permission instantly.
+            </p>
+
+            <a href="#permission" class="apply-btn">
+                Apply Permission
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PERMISSION FORM -->
+
+    <section class="permission-section" id="permission">
+
+        <div class="form-container">
+
+            <h2>Employee Permission Request</h2>
+
+            <form id="permissionForm">
+
+                <div class="input-group">
+                    <label>Employee Name</label>
+                    <input type="text" id="employeeName" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Employee ID</label>
+                    <input type="text" id="employeeId" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Department</label>
+
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>ADMIN</option>
+                        <option>MARKETTING</option>
+                        <option>DTP</option>
+                        <option>BINDING</option>                      
+                        <option>PRINTING</option>
+                        <option>CAFETERIA</option>
+                        <option>DIGITAL ZONE</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>From Time</label>
+                    <input type="time" id="fromTime" required>
+                </div>
+
+                <div class="input-group">
+                    <label>To Time</label>
+                    <input type="time" id="toTime" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Reason</label>
+                    <textarea id="reason" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Permission
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- NOTIFICATION SECTION -->
+
+    <section class="notification-box">
+
+        <div class="notification-content">
+
+            <h2>OSOP Permission History  </h2>
+
+            <p>
+                Once employee submits permission request,
+                Its automatically sends permission request to manager.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- HISTORY -->
+
+    <section class="history-section" id="history">
+
+        <h2>Permission History</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Department</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Reason</th>
+                </tr>
+                
+            </thead>
+
+            <tbody id="historyTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <h3>OSOP Staff Permission Portal</h3>
+
+        <p>Email : osop.printers@gmail.com</p>
+
+        <p>Phone : +91 73052 00713</p>
+
+        <p>© 2026 All Rights Reserved</p>
+
+    </footer>
+
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>

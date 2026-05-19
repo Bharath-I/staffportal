@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Staff Login Portal</title>
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <!-- LOGIN CONTAINER -->
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <!-- LOGO -->
+
+            <img src="logo.png"
+            alt="Logo"
+            class="logo">
+
+            <h2>Permission Staff Portal</h2>
+
+            <p>
+                Employee Permission Management System
+            </p>
+
+            <!-- LOGIN FORM -->
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label>Username</label>
+
+                    <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter Username"
+                    required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                </div>
+
+                <button type="submit">
+
+                    Login
+
+                </button>
+
+                <div id="errorMessage">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
